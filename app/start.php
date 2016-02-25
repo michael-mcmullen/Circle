@@ -1,13 +1,19 @@
 <?php
 use Illuminate\Database\Capsule\Manager as Capsule;
+
+
 session_start();
 
 require '../vendor/autoload.php';
 require 'database.php';
 
 //Require dotenv notation
-$dotenv = new Dotenv\Dotenv('../');
-$dotenv->load();
+// Environment based configuration
+// Allows developers using the getenv('<name>') method to fetch configuration values
+if (file_exists('../.env')) {
+    $dotenv = new Dotenv\Dotenv('../');
+    $dotenv->load();
+}
 
 $app = new \Slim\App([
     'settings' => [
