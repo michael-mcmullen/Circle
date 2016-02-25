@@ -1,4 +1,13 @@
 {
+	"name": "danrovito/bubble",
+	"description": "Bubble is a boilerplate of standard components based on the Slim 3 Framework.",
+	"license": "MIT",
+	"authors": [
+	    {
+	        "name": "Dan Rovito",
+	        "email": "dan@danrovito.com"
+	    }
+	],
 	"autoload": {
 		"psr-4": {
 			"Http\\": "app/Http"
