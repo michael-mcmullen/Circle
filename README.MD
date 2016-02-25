@@ -1,3 +1,5 @@
 #Bubble Framework
 
-Bubble is a starter framework currently in development based on the Slim 3 Framework
+Bubble is a PHP Framework built on Slim Framework
+
+###Current in Development
