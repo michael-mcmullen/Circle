@@ -5,7 +5,7 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 session_start();
 
 require '../vendor/autoload.php';
-require 'database.php';
+require '../config/database.php';
 
 //Require dotenv notation
 // Environment based configuration
