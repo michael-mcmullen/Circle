@@ -1,0 +1,13 @@
+{
+	"autoload": {
+		"psr-4": {
+			"config\\": "app/config"
+		}
+	},
+	"require": {
+		"slim/slim": "^3.0",
+		"slim/twig-view": "^2.0",
+		"vlucas/phpdotenv": "^2.2",
+		"illuminate/database": "^5.2"
+	}
+}
