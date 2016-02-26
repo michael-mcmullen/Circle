@@ -1,7 +1,8 @@
 <?php
+
 use Illuminate\Database\Capsule\Manager as Capsule;
 
-
+session_name('circle');
 session_start();
 
 require '../vendor/autoload.php';
@@ -15,17 +16,20 @@ if (file_exists('../.env')) {
     $dotenv->load();
 }
 
-$app = new \Slim\App([
-    'settings' => [
-        'displayErrorDetails' => getenv('DEBUG')
-    ]
-]);
+$container = new \Slim\Container();
 
-$app->db = function(){
-	return new Capsule;
+$configuration = [
+    'settings' => [
+        'displayErrorDetails' => getenv('DEBUG'),
+    ],
+];
+
+$app = new \Slim\App($container, $configuration);
+
+$app->db = function () {
+    return new Capsule();
 };
 
-$container = $app->getContainer();
 //Setup View handler
 $container['view'] = function ($container) {
     $view = new \Slim\Views\Twig('../app/views');
@@ -37,4 +41,4 @@ $container['view'] = function ($container) {
     return $view;
 };
 
-require 'routes.php';
+require '../app/routes.php';

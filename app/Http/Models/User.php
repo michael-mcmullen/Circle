@@ -2,6 +2,6 @@
 
 namespace Http\Models;
 
-class User{
-	
+class User
+{
 }
