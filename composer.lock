@@ -4,9 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ac6c9da97021320bda16469ce277ab92",
-    "content-hash": "f6cc168b0bb3fed77fb645871d92072d",
+    "hash": "b03afb76a29b7578a52f83f7efcd8b6c",
+    "content-hash": "4cec51b7c0c719d4bdd036fc2ef7d1b6",
     "packages": [
+        {
+            "name": "circleframework/framework",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CircleFramework/Framework.git",
+                "reference": "44da2aa85fae884fb502a9a69d47c66fd3be1449"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CircleFramework/Framework/zipball/44da2aa85fae884fb502a9a69d47c66fd3be1449",
+                "reference": "44da2aa85fae884fb502a9a69d47c66fd3be1449",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^5.2",
+                "slim/slim": "^3.0",
+                "slim/twig-view": "^2.0",
+                "vlucas/phpdotenv": "^2.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Rovito",
+                    "email": "danrovito@gmail.com"
+                }
+            ],
+            "description": "The Circle Framework.",
+            "keywords": [
+                "circle",
+                "framework"
+            ],
+            "time": "2016-02-26 03:23:19"
+        },
         {
             "name": "container-interop/container-interop",
             "version": "1.1.0",
@@ -188,16 +231,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.2.19",
+            "version": "v5.2.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "e78709a47c4aeef6470654f8fbb76928c0700eeb"
+                "reference": "8b0068c326652332fd364399f4d8cce894953172"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/e78709a47c4aeef6470654f8fbb76928c0700eeb",
-                "reference": "e78709a47c4aeef6470654f8fbb76928c0700eeb",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/8b0068c326652332fd364399f4d8cce894953172",
+                "reference": "8b0068c326652332fd364399f4d8cce894953172",
                 "shasum": ""
             },
             "require": {
@@ -244,7 +287,7 @@
                 "orm",
                 "sql"
             ],
-            "time": "2016-02-17 17:31:14"
+            "time": "2016-02-24 15:02:47"
         },
         {
             "name": "illuminate/support",
@@ -489,16 +532,16 @@
         },
         {
             "name": "slim/slim",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slimphp/Slim.git",
-                "reference": "03b44a4b41896ba42c78bbd5fa172cd79e650496"
+                "reference": "835425f5945a25509eeab885e80617948e68371d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim/zipball/03b44a4b41896ba42c78bbd5fa172cd79e650496",
-                "reference": "03b44a4b41896ba42c78bbd5fa172cd79e650496",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/835425f5945a25509eeab885e80617948e68371d",
+                "reference": "835425f5945a25509eeab885e80617948e68371d",
                 "shasum": ""
             },
             "require": {
@@ -552,7 +595,7 @@
                 "micro",
                 "router"
             ],
-            "time": "2016-01-08 15:37:50"
+            "time": "2016-02-25 08:15:17"
         },
         {
             "name": "slim/twig-view",
