@@ -1,4 +1,5 @@
 <?php
+
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 session_name('circle');
@@ -15,7 +16,7 @@ if (file_exists('../.env')) {
     $dotenv->load();
 }
 
-$container = new \Slim\Container;
+$container = new \Slim\Container();
 
 $configuration = [
     'settings' => [
@@ -25,8 +26,8 @@ $configuration = [
 
 $app = new \Slim\App($container, $configuration);
 
-$app->db = function(){
-	return new Capsule;
+$app->db = function () {
+    return new Capsule();
 };
 
 //Setup View handler
