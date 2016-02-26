@@ -37,4 +37,4 @@ $container['view'] = function ($container) {
     return $view;
 };
 
-require 'routes.php';
+require '../app/routes.php';
