@@ -1,0 +1,22 @@
+{
+	"name": "circleframework/circle",
+	"description": "Circle is a PHP MVC Framework",
+	"license": "MIT",
+	"authors": [
+	    {
+	        "name": "Dan Rovito",
+	        "email": "dan@danrovito.com"
+	    }
+	],
+	"autoload": {
+		"psr-4": {
+			"Http\\": "app/Http"
+		}
+	},
+	"require": {
+		"circleframework/framework": "^0.1.0"
+	},
+	"config": {
+        "preferred-install": "dist"
+    }
+}
