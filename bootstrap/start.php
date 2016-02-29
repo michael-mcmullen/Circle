@@ -1,4 +1,4 @@
 <?php
 
-require_once '../app/base/app.php';
-require_once '../app/base/controller.php';
+require_once '../app/base/App.php';
+require_once '../app/base/Controller.php';
