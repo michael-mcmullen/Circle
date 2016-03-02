@@ -14,7 +14,7 @@
 		}
 	},
 	"require": {
-		"circleframework/framework": "dev-master"
+		"circleframework/framework": "dev-0.1-dev"
 	},
 	"config": {
         "preferred-install": "dist"
