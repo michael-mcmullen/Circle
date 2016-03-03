@@ -2,9 +2,11 @@
 
 class App
 {
-    /*protected $controller = 'home';
+    //Sets the default route when visiting root url.
+    //Ex. example.com/ uses /home/index
+    protected $controller = 'home';
     protected $method = 'index';
-    protected $params = [];*/
+    protected $params = [];
 
     public function __construct()
     {
