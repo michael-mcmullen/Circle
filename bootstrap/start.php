@@ -1,8 +1,5 @@
 <?php
 
-use Exception as BaseException;
-use Whoops\Handler\PrettyPageHandler;
-use Whoops\Run;
 
 require_once '../app/base/App.php';
 require_once '../app/base/Controller.php';
@@ -16,6 +13,6 @@ if (file_exists('../.env')) {
 }
 
 //Error Handling
-$whoops = new \Whoops\Run;
-$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+$whoops = new \Whoops\Run();
+$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
 $whoops->register();
