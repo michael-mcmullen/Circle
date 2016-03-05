@@ -1,8 +1,6 @@
 <?php
 
-
-require_once '../app/base/App.php';
-require_once '../app/base/Controller.php';
+require 'autoloader.php';
 
 // Require dotenv notation
 // Environment based configuration
@@ -13,6 +11,9 @@ if (file_exists('../.env')) {
 }
 
 //Error Handling
-$whoops = new \Whoops\Run();
-$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
-$whoops->register();
+if (getenv('APP_DEBUG') == "true") {
+	$whoops = new \Whoops\Run();
+	$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
+	$whoops->register(); 
+}
+

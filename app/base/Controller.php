@@ -21,6 +21,6 @@ class Controller
     {
         extract($viewData, EXTR_SKIP);
 
-        require_once '../views/'.$view.'.php';
+        require_once '../resources/views/'.$view.'.php';
     }
 }
