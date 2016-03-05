@@ -44,8 +44,8 @@ class App
 
     public function parseUrl()
     {
-        if (isset($_GET['url'])) {
-            return $url = explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));
+        if (isset($_SERVER['PATH_INFO'])) {
+            return array_values(array_filter(explode('/', filter_var(rtrim($_SERVER['PATH_INFO'], '/'), FILTER_SANITIZE_URL)), 'strlen'));
         }
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace app\base;
+
 class Controller
 {
     /*
@@ -15,8 +17,10 @@ class Controller
     /*
         Load the view
      */
-    public function view($view, $data = [])
+    public function view($view, $viewData = [])
     {
+        extract($viewData, EXTR_SKIP);
+
         require_once '../views/'.$view.'.php';
     }
 }
