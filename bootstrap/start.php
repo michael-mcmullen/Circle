@@ -11,9 +11,8 @@ if (file_exists('../.env')) {
 }
 
 //Error Handling
-if (getenv('APP_DEBUG') == "true") {
-	$whoops = new \Whoops\Run();
-	$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
-	$whoops->register(); 
+if (getenv('APP_DEBUG') == 'true') {
+    $whoops = new \Whoops\Run();
+    $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
+    $whoops->register();
 }
-
