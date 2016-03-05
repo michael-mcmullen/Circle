@@ -6,3 +6,7 @@
 Circle is an MVC Framework built in PHP
 
 ####Currently in Development
+
+## License
+
+Circle Framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
