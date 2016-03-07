@@ -1,7 +1,5 @@
 <?php
 
-require_once '../bootstrap/start.php';
+require '../bootstrap/start.php';
 
-$app = new App();
-
-return $app;
+$app->run();
