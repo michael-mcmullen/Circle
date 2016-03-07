@@ -1,37 +1,4 @@
 <?php
 
-session_name('circle');
-session_start();
-
-require '../vendor/autoload.php';
-
-//Require dotenv notation
-// Environment based configuration
-// Allows developers using the getenv('<name>') method to fetch configuration values
-if (file_exists('../.env')) {
-    $dotenv = new Dotenv\Dotenv('../');
-    $dotenv->load();
-}
-
-$container = new \Slim\Container();
-
-$configuration = [
-    'settings' => [
-        'displayErrorDetails' => getenv('DEBUG'),
-    ],
-];
-
-$app = new \Slim\App($container, $configuration);
-
-//Setup View handler
-$container['view'] = function ($container) {
-    $view = new \Slim\Views\Twig('../resources/views');
-    $view->addExtension(new \Slim\Views\TwigExtension(
-        $container['router'],
-        $container['request']->getUri()
-    ));
-
-    return $view;
-};
-
+require 'autoloader.php';
 require '../app/routes.php';
