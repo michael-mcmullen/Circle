@@ -1,12 +1,9 @@
 <?php
 
-use Illuminate\Database\Capsule\Manager as Capsule;
-
 session_name('circle');
 session_start();
 
 require '../vendor/autoload.php';
-require '../config/database.php';
 
 //Require dotenv notation
 // Environment based configuration
@@ -26,13 +23,9 @@ $configuration = [
 
 $app = new \Slim\App($container, $configuration);
 
-$app->db = function () {
-    return new Capsule();
-};
-
 //Setup View handler
 $container['view'] = function ($container) {
-    $view = new \Slim\Views\Twig('../app/views');
+    $view = new \Slim\Views\Twig('../resources/views');
     $view->addExtension(new \Slim\Views\TwigExtension(
         $container['router'],
         $container['request']->getUri()
