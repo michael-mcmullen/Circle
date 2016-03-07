@@ -1,7 +1,7 @@
 <?php
 
-use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
+use Monolog\Logger;
 
 session_name('circle');
 session_start();
