@@ -1,3 +1,4 @@
 .env
 vendor/
 sftp-config.json
+.idea/
