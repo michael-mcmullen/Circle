@@ -1,6 +1,6 @@
 {
-	"name": "circleframework/circle",
-	"description": "Circle is a PHP MVC Framework",
+	"name": "danrovito/bubble",
+	"description": "Bubble is a boilerplate of standard components based on the Slim 3 Framework.",
 	"license": "MIT",
 	"authors": [
 	    {
@@ -14,7 +14,7 @@
 		}
 	},
 	"require": {
-		"circleframework/framework": "dev-master"
+		"circleframework/framework": "^0.1.0"
 	},
 	"config": {
         "preferred-install": "dist"
