@@ -1,7 +1,6 @@
 <?php
 
-namespace Http\Models;
-
 class User
 {
+    public $name;
 }

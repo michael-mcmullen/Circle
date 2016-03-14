@@ -1,5 +1,8 @@
 <?php
 
-require '../bootstrap/start.php';
+require '../vendor/autoload.php';
+require_once '../bootstrap/start.php';
 
-$app->run();
+$app = new App();
+
+return $app;
