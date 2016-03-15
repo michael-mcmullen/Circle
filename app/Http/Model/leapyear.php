@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 namespace Http\Model;
 
-class LeapYear
+class leapyear
 {
     public function isLeapYear($year = null)
     {
