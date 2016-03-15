@@ -14,7 +14,7 @@
 		}
 	},
 	"require": {
-		"circleframework/framework": "0.1.*",
+		"circleframework/framework": "dev-alpha-dev",
         "filp/whoops": "^2.0"
 	},
 	"config": {
