@@ -24,7 +24,7 @@ $sc->register('listener.response', 'Symfony\Component\HttpKernel\EventListener\R
 $sc->register('dispatcher', 'Symfony\Component\EventDispatcher\EventDispatcher')
     ->addMethodCall('addSubscriber', [new Reference('listener.router')])
     ->addMethodCall('addSubscriber', [new Reference('listener.response')])
-    ->addMethodCall('addSubscriber', [new Reference('listener.exception')]);
+    //->addMethodCall('addSubscriber', [new Reference('listener.exception')]);
 
 $sc->register('framework', 'Circle\Framework')
     ->setArguments([new Reference('dispatcher'), new Reference('resolver')]);
