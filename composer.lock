@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f7fdcb4d36dd9325f81849895e523903",
-    "content-hash": "5d5c6af55a708d92816c9ee9a02973c1",
+    "hash": "42a81032ce6d445386bf9ec1c9d3ef3f",
+    "content-hash": "ecd81ed3c59af9a32009e41954b4b344",
     "packages": [
         {
             "name": "circleframework/framework",
-            "version": "dev-alpha-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CircleFramework/Framework.git",
-                "reference": "263003b6fb8b8177c94762d1366f8cffe4f41029"
+                "reference": "d9c01e73a82a3153f4397e8b6b874844fd12d8c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CircleFramework/Framework/zipball/263003b6fb8b8177c94762d1366f8cffe4f41029",
-                "reference": "263003b6fb8b8177c94762d1366f8cffe4f41029",
+                "url": "https://api.github.com/repos/CircleFramework/Framework/zipball/d9c01e73a82a3153f4397e8b6b874844fd12d8c6",
+                "reference": "d9c01e73a82a3153f4397e8b6b874844fd12d8c6",
                 "shasum": ""
             },
             "require": {
@@ -31,7 +31,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1-dev"
+                    "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
@@ -54,7 +54,7 @@
                 "circle",
                 "framework"
             ],
-            "time": "2016-03-15 04:36:11"
+            "time": "2016-03-29 20:50:58"
         },
         {
             "name": "psr/log",
@@ -931,16 +931,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.2.11",
+            "version": "5.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "94b953a53d92cc6024bcbaab39a73370fd2f267c"
+                "reference": "6f0948bab32270352f97d1913d82a49338dcb0da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/94b953a53d92cc6024bcbaab39a73370fd2f267c",
-                "reference": "94b953a53d92cc6024bcbaab39a73370fd2f267c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6f0948bab32270352f97d1913d82a49338dcb0da",
+                "reference": "6f0948bab32270352f97d1913d82a49338dcb0da",
                 "shasum": ""
             },
             "require": {
@@ -1001,20 +1001,20 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-03-14 06:24:28"
+            "time": "2016-03-15 05:59:58"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "3.0.6",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "49bc700750196c04dd6bc2c4c99cb632b893836b"
+                "reference": "7c34c9bdde4131b824086457a3145e27dba10ca1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/49bc700750196c04dd6bc2c4c99cb632b893836b",
-                "reference": "49bc700750196c04dd6bc2c4c99cb632b893836b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/7c34c9bdde4131b824086457a3145e27dba10ca1",
+                "reference": "7c34c9bdde4131b824086457a3145e27dba10ca1",
                 "shasum": ""
             },
             "require": {
@@ -1032,7 +1032,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "3.1.x-dev"
                 }
             },
             "autoload": {
@@ -1057,7 +1057,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-12-08 08:47:06"
+            "time": "2016-03-24 05:58:25"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
