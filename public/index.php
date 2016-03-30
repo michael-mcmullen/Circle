@@ -1,12 +1,12 @@
 <?php
 
 
-require_once '../vendor/autoload.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
 use Symfony\Component\HttpFoundation\Request;
 
-$routes = include '../app/routes.php';
-$sc = include '../bootstrap/container.php';
+$routes = include __DIR__.'/../app/routes.php';
+$sc = include __DIR__.'/../bootstrap/container.php';
 
 $request = Request::createFromGlobals();
 
