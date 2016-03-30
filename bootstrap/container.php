@@ -18,13 +18,13 @@ $sc->register('listener.router', 'Symfony\Component\HttpKernel\EventListener\Rou
 $sc->register('listener.response', 'Symfony\Component\HttpKernel\EventListener\ResponseListener')
     ->setArguments(['UTF-8']);
 
-// $sc->register('listener.exception', 'Symfony\Component\HttpKernel\EventListener\ExceptionListener')
-//     ->setArguments(['Http\\Controllers\\ErrorController::exceptionAction']);
+$sc->register('listener.exception', 'Symfony\Component\HttpKernel\EventListener\ExceptionListener')
+    ->setArguments(['\\app\\Http\\Controllers\\ErrorController::exceptionAction']);
 
 $sc->register('dispatcher', 'Symfony\Component\EventDispatcher\EventDispatcher')
     ->addMethodCall('addSubscriber', [new Reference('listener.router')])
-    ->addMethodCall('addSubscriber', [new Reference('listener.response')]);
-    //->addMethodCall('addSubscriber', [new Reference('listener.exception')]);
+    ->addMethodCall('addSubscriber', [new Reference('listener.response')])
+    ->addMethodCall('addSubscriber', [new Reference('listener.exception')]);
 
 $sc->register('framework', 'Circle\Framework')
     ->setArguments([new Reference('dispatcher'), new Reference('resolver')]);
