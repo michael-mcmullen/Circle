@@ -19,7 +19,7 @@ $sc->register('listener.response', 'Symfony\Component\HttpKernel\EventListener\R
     ->setArguments(['UTF-8']);
 
 $sc->register('listener.exception', 'Symfony\Component\HttpKernel\EventListener\ExceptionListener')
-    ->setArguments(['..\app\Http\Controllers\ErrorController::exceptionAction']);
+    ->setArguments(['Http\\Controllers\\ErrorController::exceptionAction']);
 
 $sc->register('dispatcher', 'Symfony\Component\EventDispatcher\EventDispatcher')
     ->addMethodCall('addSubscriber', [new Reference('listener.router')])
