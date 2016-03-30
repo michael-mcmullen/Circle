@@ -38,6 +38,6 @@ $sc->register('listener.response', 'Symfony\Component\HttpKernel\EventListener\R
 $sc->setParameter('charset', 'UTF-8');
 $sc->register('matcher', 'Symfony\Component\Routing\Matcher\UrlMatcher')->setArguments(['%routes%', new Reference('context')]);
 
-$sc->setParameter('routes', include __DIR__.'/../app/routes.php');
+$sc->setParameter('routes', include '../app/routes.php');
 
 return $sc;
