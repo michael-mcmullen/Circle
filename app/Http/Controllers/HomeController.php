@@ -8,6 +8,7 @@ class HomeController
 {
     public function index()
     {
-        return new Response('Circle Framework');
+        return $this->view('home');
+        //return new Response('Circle Framework');
     }
 }
