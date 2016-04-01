@@ -8,7 +8,6 @@ class HomeController
 {
     public function index()
     {
-        die('a'); 
         return new Response('Circle Framework');
     }
 }
