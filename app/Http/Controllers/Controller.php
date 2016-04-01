@@ -10,6 +10,6 @@ class Controller
   {
     require_once '../app/resources/views/' . $view . '.php';
     
-    return;
+    return new Response();
   }
 }
