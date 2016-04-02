@@ -16,7 +16,7 @@
                 width: 100%;
                 display: table;
                 margin: 0;
-                padding: 0;                
+                padding: 0;
             }
 
             .container {
@@ -25,23 +25,24 @@
                 text-align: center;
             }
             .home-heading {
-                font-size: 46px;
+                font-size: 72px;
                 font-weight: 400;
                 line-height: 56px;
                 margin-bottom: 15px;
-                color: #666;
+                color: #9e96f2;
             }
             .home-text {
                 font-size: 22px;
                 font-weight: 300;
-                line-height: 40px;
+                line-height: 20px;
+                color: #666;
             }
         </style>
     </head>
     <body>
         <div class="container">
                 <div class="home-heading">
-                Circle Framework
+                Circle
             </div>
             <div class="home-text">
                 A PHP MVC Framework
