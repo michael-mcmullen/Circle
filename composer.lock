@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CircleFramework/Framework.git",
-                "reference": "d9c01e73a82a3153f4397e8b6b874844fd12d8c6"
+                "reference": "a6983f6c7bbdf92a4373efe27560c4ce3c58fc94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CircleFramework/Framework/zipball/d9c01e73a82a3153f4397e8b6b874844fd12d8c6",
-                "reference": "d9c01e73a82a3153f4397e8b6b874844fd12d8c6",
+                "url": "https://api.github.com/repos/CircleFramework/Framework/zipball/a6983f6c7bbdf92a4373efe27560c4ce3c58fc94",
+                "reference": "a6983f6c7bbdf92a4373efe27560c4ce3c58fc94",
                 "shasum": ""
             },
             "require": {
@@ -31,12 +31,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.0.*-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "": "App/"
+                    "": "app/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -54,7 +54,7 @@
                 "circle",
                 "framework"
             ],
-            "time": "2016-03-29 20:50:58"
+            "time": "2016-04-02 01:30:57"
         },
         {
             "name": "psr/log",
