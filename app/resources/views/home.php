@@ -45,7 +45,7 @@
                 Circle
             </div>
             <div class="home-text">
-                A PHP MVC Framework
+                A Scalable PHP MVC Framework for APIs
             </div>
         </div>
     </body>
