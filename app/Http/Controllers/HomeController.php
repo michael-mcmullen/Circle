@@ -9,7 +9,7 @@ class HomeController extends Controller
     
     public function __construct()
     {
-        $method = 'GET';
+        $this->method = 'GET';
     }
     
     public function index()
