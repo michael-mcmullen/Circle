@@ -7,15 +7,9 @@ use Symfony\Component\HttpFoundation\Response;
 class HomeController extends Controller
 {
     
-    public function __construct(){
-        //$baseUrl = '',
-        $method = 'GET'
-        //$host = 'localhost',
-        //$scheme = 'http',
-        //$httpPort = 80,
-        //$httpsPort = 443,
-        //$path = '/',
-        //$queryString = ''
+    public function __construct()
+    {
+        $method = 'GET';
     }
     
     public function index()
