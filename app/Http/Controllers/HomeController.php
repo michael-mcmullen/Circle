@@ -6,12 +6,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class HomeController extends Controller
 {
-    
-    public function __construct()
-    {
-        $this->method = 'GET';
-    }
-    
     public function index()
     {
         return $this->view('home');
