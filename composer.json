@@ -1,5 +1,5 @@
 {
-	"name": "circleframework/circle",
+	"name": "circlephp/circle",
 	"description": "Circle is a PHP MVC Framework",
 	"license": "MIT",
 	"authors": [
