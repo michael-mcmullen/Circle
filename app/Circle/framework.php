@@ -1,4 +1,5 @@
 <?php
+
 namespace Circle;
 
 use Symfony\Component\HttpFoundation\Request;
@@ -8,7 +9,7 @@ use Symfony\Component\HttpKernel\Controller\ControllerResolver;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Symfony\Component\Routing\Matcher\UrlMatcher;
 
-class Framework
+class framework
 {
     protected $matcher;
     protected $controllerResolver;
