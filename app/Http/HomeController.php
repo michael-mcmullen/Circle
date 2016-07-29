@@ -1,11 +1,11 @@
 <?php
 
-namespace Circle\Http;
+namespace Http;
 
 class HomeController
 {
     public function index()
     {
-        return 'Circle Framework';
+        return 'Circle Framework!';
     }
 }

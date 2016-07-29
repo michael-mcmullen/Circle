@@ -19,4 +19,6 @@ $argumentResolver = new ArgumentResolver();
 $framework = new Circle\Framework($matcher, $controllerResolver, $argumentResolver);
 $response = $framework->handle($request);
 
-$response->send();
+print $response;
+
+//$response->send();
